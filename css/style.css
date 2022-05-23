@@ -324,10 +324,6 @@ h5{
 
 /* operations */
 
-.operations{
-    height: 200px;
-}
-
 .operations .cards{
     width: 100%;
     min-height: 100px;
@@ -350,4 +346,141 @@ h5{
 .operations p{
     font-size: 12px;
     color: rgb(76, 76, 76);
+}
+
+/* clients */
+
+.clients{
+    height: 200px;
+    padding-right: 300px;
+}
+
+.clients a{
+    color: #0B60FF;
+    text-decoration: underline;
+}
+
+/* clients cards */
+
+.bg-green{
+    background-color: #A2D49B;
+}
+
+.bg-bordeaux{
+    background-color: #61082B;
+}
+
+.bg-blue{
+    background-color: #0C94CE;
+}
+
+.bg-red{
+    background-color: #FE1B1C;
+}
+
+.bg-darkred{
+    background-color: #D50120;
+}
+
+.bg-lightblue{
+    background-color: #B3D0E8;
+}
+
+.bg-darkblue{
+    background-color: #0D2481;
+}
+
+.bg-yellow{
+    background-color: #FED830;
+}
+
+.clients-cards{
+    background-color: red;
+    display: flex;
+}
+
+.left, .right{
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.left .card, .right .card{
+    width: calc(100% / 2);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    width: calc(100% / 3);
+    background-color: #F5F5F5;
+    height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.center hr{
+    width: 20%;
+    margin-top: 30px;
+}
+
+.clients-cards p{
+    font-size: 12px;
+    color: rgb(76, 76, 76);
+}
+
+.left img, .right img{
+    width: 120px;
+    filter: invert(100%);
+}
+
+.center img{
+    width: 220px;
+}
+
+.left div:first-child{
+    border: 10px solid #D2E9CD;
+    box-sizing: border-box;
+}
+
+/* sezione prova gratuita */
+
+.free-trial{
+    background-color: #B3D0E8;
+    height: 220px;
+}
+
+.free-trial .container-small{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.free-trial h2{
+    color: #61082B;
+}
+
+.free-trial .title{
+    width: 50%;
+}
+
+.free-trial .button {
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.free-trial a{
+    text-align: right;
+    background-color: white;
+    padding: 10px 34px;
+    font-size: 14px;
+    color: rgb(57, 57, 57);
 }
