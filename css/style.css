@@ -451,13 +451,13 @@ h5{
 
 .free-trial{
     background-color: #B3D0E8;
-    height: 220px;
+    height: 280px;
 }
 
 .free-trial .container-small{
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
+    padding-top: 100px;
     box-sizing: border-box;
 }
 
