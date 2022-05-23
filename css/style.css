@@ -122,12 +122,15 @@ h1{
     margin-bottom: 25px;
 }
 
-.description .button{
+.jumbotron .description .button{
     padding: 7px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-i{
+.jumbotron i{
     font-size: 36px;
+    margin-top: 20px;
 }
 
 /* contenuto principale */
@@ -167,7 +170,7 @@ h2{
     border: 1.5px solid rgb(177, 177, 177);
 }
 
-.options p{
+.plans .options p{
     margin-right: 50px;
     font-size: 14px;
     color: rgb(76, 76, 76);
@@ -176,12 +179,12 @@ h2{
 
 /* cards */
 
-.cards{
+.plans .cards{
     display: flex;
     justify-content: space-between;
 }
 
-.card{
+.plans .card{
     width: 30%;
     min-height: 200px;
     border: 1px solid rgb(198, 198, 198);
@@ -191,7 +194,7 @@ h2{
     border-bottom: 1px solid rgb(198, 198, 198);
 }
 
-.card p{
+.plans p{
     text-align: center;
     margin: 5px 0;
 }
@@ -215,7 +218,7 @@ span{
     margin-right: 5px;
 }
 
-.card p, .card i{
+.container-card p, .container-card i{
     font-size: 12px;
     color: #4c4c4c;
     text-align: center;
@@ -302,7 +305,6 @@ h5{
 /* sezione partner */
 
 .partner{
-    height: 200px;
     display: flex;
 }
 
@@ -315,7 +317,37 @@ h5{
     padding: 40px;
 }
 
-.partner a{
+.partner .description a{
     border: 1px solid grey;
-    padding: 7px 15pxadded;
+    padding: 7px 15px;
+}
+
+/* operations */
+
+.operations{
+    height: 200px;
+}
+
+.operations .cards{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operations .card{
+    width: 250px;
+    min-height: 50px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.operations img{
+    width: 220px;
+}
+
+.operations p{
+    font-size: 12px;
+    color: rgb(76, 76, 76);
 }
