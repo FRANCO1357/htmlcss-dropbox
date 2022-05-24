@@ -9,6 +9,10 @@ body{
     color: black;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /* utilities */
 
 .container-big{
@@ -59,11 +63,25 @@ nav .user{
 }
 
 ul img{
-    height: 25px;
+    height: 22px;
 }
 
-li{
+nav li{
    margin-right: 25px; 
+   height: 100%;
+   line-height: 60px;
+}
+
+nav li:hover{
+    border-bottom: 2px solid rgb(76, 76, 76);
+}
+
+.info li:first-child:hover{
+    border: none;
+}
+
+.user li:last-child:hover{
+    border: none;
 }
 
 a{
@@ -136,7 +154,6 @@ h1{
 /* contenuto principale */
 
 main{
-    height: 1000px;
     padding-top: 120px;
 }
 
@@ -518,4 +535,47 @@ h5{
 
 .faq:hover i{
     transform: rotate(0.5turn);
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer ul a{
+    color: white;
+    display: inline;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer li{
+    margin: 10px 0;
+}
+
+footer hr{
+    width: 10%;
+    margin-top: 80px;
+}
+
+footer a{
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+    margin-top: 40px;
+    display: block;
 }
