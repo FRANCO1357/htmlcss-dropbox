@@ -42,6 +42,7 @@ nav{
     top: 0;
     left: 0;
     box-shadow: 0 0.5px 3px rgb(144, 144, 144);
+    z-index: 1;
 }
 
 nav ul{
@@ -49,7 +50,6 @@ nav ul{
     width: 500px;
     margin: 0;
     display: flex;
-    list-style-type: none;
     align-items: center;
 }
 
@@ -76,11 +76,7 @@ nav li:hover{
     border-bottom: 2px solid rgb(76, 76, 76);
 }
 
-.info li:first-child:hover{
-    border: none;
-}
-
-.user li:last-child:hover{
+.info li:first-child:hover, .user li:last-child:hover{
     border: none;
 }
 
@@ -149,6 +145,7 @@ h1{
 .jumbotron i{
     font-size: 36px;
     margin-top: 20px;
+    color: black;
 }
 
 /* contenuto principale */
@@ -162,6 +159,8 @@ h2{
     font-size: 28px;
     margin-bottom: 40px;
 }
+
+/* opzioni */
 
 .options{
     display: flex;
@@ -214,12 +213,12 @@ h2{
 .plans p{
     text-align: center;
     margin: 5px 0;
+    font-size: 12px;
 }
 
 .container-card ul{
     font-size: 12px;
     color: rgb(76, 76, 76);
-    list-style-type: none;
     padding: 0;
     margin: 40px 0;
 }
@@ -272,6 +271,10 @@ h5{
     margin-bottom: 5px;
 }
 
+.fa-solid.fa-check{
+    color: #0B60FF;
+}
+
 .container-card{
     padding: 20px;
     margin: 0 auto;
@@ -282,7 +285,6 @@ h5{
 .big-card{
     width: 100%;
     border: 1px solid rgb(198, 198, 198);
-    color: rgb(76, 76, 76);
     margin-top: 40px;
 }
 
@@ -383,32 +385,72 @@ h5{
     background-color: #A2D49B;
 }
 
+.bg-green:hover{
+    border: 10px solid #D2E9CD;
+    box-sizing: border-box;
+}
+
 .bg-bordeaux{
     background-color: #61082B;
+}
+
+.bg-bordeaux:hover{
+    border: 10px solid #c25882;
+    box-sizing: border-box;
 }
 
 .bg-blue{
     background-color: #0C94CE;
 }
 
+.bg-blue:hover{
+    border: 10px solid #84cbe9;
+    box-sizing: border-box;
+}
+
 .bg-red{
     background-color: #FE1B1C;
+}
+
+.bg-red:hover{
+    border: 10px solid #ff8888;
+    box-sizing: border-box;
 }
 
 .bg-darkred{
     background-color: #D50120;
 }
 
+.bg-darkred:hover{
+    border: 10px solid #f07789;
+    box-sizing: border-box;
+}
+
 .bg-lightblue{
     background-color: #B3D0E8;
+}
+
+.bg-lightblue:hover{
+    border: 10px solid #e0eefa;
+    box-sizing: border-box;
 }
 
 .bg-darkblue{
     background-color: #0D2481;
 }
 
+.bg-darkblue:hover{
+    border: 10px solid #6477c6;
+    box-sizing: border-box;
+}
+
 .bg-yellow{
     background-color: #FED830;
+}
+
+.bg-yellow:hover{
+    border: 10px solid #fff2b6;
+    box-sizing: border-box; 
 }
 
 .clients-cards{
@@ -457,11 +499,6 @@ h5{
 
 .center img{
     width: 220px;
-}
-
-.left div:first-child{
-    border: 10px solid #D2E9CD;
-    box-sizing: border-box;
 }
 
 /* sezione prova gratuita */
