@@ -1,12 +1,15 @@
 /* reset */
 
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
     padding-top: 60px;
-    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color: black;
+    color: rgb(76, 76, 76);
 }
 
 ul{
@@ -82,8 +85,8 @@ nav li:hover{
 
 a{
     text-decoration: none;
-    color: rgb(76, 76, 76);
     font-size: 13px;
+    color: rgb(76, 76, 76);
 }
 
 /* blue button */
@@ -109,6 +112,7 @@ h1{
     font-size: 54px;
     font-weight: 800;
     margin: 0;
+    color: black;
 }
 
 .container-jumbotron{
@@ -131,7 +135,6 @@ h1{
 
 .description p{
     font-size: 12px;
-    color: rgb(76, 76, 76);
     margin: 0;
     margin-bottom: 25px;
 }
@@ -146,6 +149,19 @@ h1{
     font-size: 36px;
     margin-top: 20px;
     color: black;
+    animation: bouncing 0.5s ease infinite alternate;
+}
+
+@keyframes bouncing{
+    from{
+        position: relative;
+        bottom: 0;
+    }
+    
+    to{
+        position: relative;
+        bottom: 20px;
+    }
 }
 
 /* contenuto principale */
@@ -158,6 +174,7 @@ h2{
     margin: 0;
     font-size: 28px;
     margin-bottom: 40px;
+    color: black;
 }
 
 /* opzioni */
@@ -174,7 +191,6 @@ h2{
     background-color: white;
     margin-right: 3px;
     border-radius: 50%;
-    box-sizing: border-box;
     display: inline-block;
 }
 
@@ -189,7 +205,6 @@ h2{
 .plans .options p{
     margin-right: 50px;
     font-size: 14px;
-    color: rgb(76, 76, 76);
     display: inline-block;
 }
 
@@ -218,7 +233,6 @@ h2{
 
 .container-card ul{
     font-size: 12px;
-    color: rgb(76, 76, 76);
     padding: 0;
     margin: 40px 0;
 }
@@ -246,7 +260,8 @@ span{
 
 .card .button{
     font-size: 12px;
-    padding: 5px 19px;
+    display: block;
+    text-align: center;
 }
 
 .card p a{
@@ -265,6 +280,7 @@ hr{
 
 h3, h5{
     text-align: left;
+    color: black;
 }
 
 h5{
@@ -354,7 +370,6 @@ h5{
     width: 250px;
     min-height: 50px;
     padding-right: 10px;
-    box-sizing: border-box;
     margin-bottom: 20px;
 }
 
@@ -364,7 +379,6 @@ h5{
 
 .operations p{
     font-size: 12px;
-    color: rgb(76, 76, 76);
 }
 
 /* clients */
@@ -383,74 +397,82 @@ h5{
 
 .bg-green{
     background-color: #A2D49B;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-green:hover{
     border: 10px solid #D2E9CD;
-    box-sizing: border-box;
 }
 
 .bg-bordeaux{
     background-color: #61082B;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-bordeaux:hover{
     border: 10px solid #c25882;
-    box-sizing: border-box;
 }
 
 .bg-blue{
     background-color: #0C94CE;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-blue:hover{
     border: 10px solid #84cbe9;
-    box-sizing: border-box;
 }
 
 .bg-red{
     background-color: #FE1B1C;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-red:hover{
     border: 10px solid #ff8888;
-    box-sizing: border-box;
 }
 
 .bg-darkred{
     background-color: #D50120;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-darkred:hover{
     border: 10px solid #f07789;
-    box-sizing: border-box;
 }
 
 .bg-lightblue{
     background-color: #B3D0E8;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-lightblue:hover{
     border: 10px solid #e0eefa;
-    box-sizing: border-box;
 }
 
 .bg-darkblue{
     background-color: #0D2481;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-darkblue:hover{
     border: 10px solid #6477c6;
-    box-sizing: border-box;
 }
 
 .bg-yellow{
     background-color: #FED830;
+    border: 10px solid transparent;
+    transition: border 1s linear;
 }
 
 .bg-yellow:hover{
     border: 10px solid #fff2b6;
-    box-sizing: border-box; 
 }
 
 .clients-cards{
@@ -459,7 +481,8 @@ h5{
 }
 
 .left, .right{
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -468,18 +491,17 @@ h5{
 
 .left .card, .right .card{
     width: calc(100% / 2);
-    height: 250px;
+    height: calc(100% / 2);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .center{
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     background-color: #F5F5F5;
-    height: 500px;
+    height: calc(100vw / 3);
     padding: 50px;
-    box-sizing: border-box;
 }
 
 .center hr{
@@ -489,7 +511,6 @@ h5{
 
 .clients-cards p{
     font-size: 12px;
-    color: rgb(76, 76, 76);
 }
 
 .left img, .right img{
@@ -512,7 +533,6 @@ h5{
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
-    box-sizing: border-box;
 }
 
 .free-trial h2{
@@ -566,6 +586,10 @@ h5{
     font-size: 14px;
 }
 
+.answer p{
+    margin-bottom: 20px;
+}
+
 .faq:hover .answer{
     max-height: 300px;
 }
@@ -580,6 +604,10 @@ footer{
     background-color: black;
     color: white;
     padding-bottom: 40px;
+}
+
+footer h3{
+    color: white;
 }
 
 .footer-menu{
